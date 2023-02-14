@@ -15,3 +15,8 @@
       left: 100%;
     }
   }
+
+  .scroll-container {
+    white-space: nowrap;
+  }
+  
