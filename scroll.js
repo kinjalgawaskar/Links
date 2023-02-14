@@ -1,5 +1,4 @@
-const container = document.querySelector('.scroll-container');
-window.addEventListener('scroll', () => {
-  const scrollPercentage = window.scrollX / (document.body.scrollWidth - window.innerWidth);
-  container.scrollLeft = container.scrollWidth * scrollPercentage;
-});
+$("#someContainer").on("scroll", function (e) {
+  horizontal = e.currentTarget.scrollLeft;
+  vertical = e.currentTarget.scrollTop;
+  });
