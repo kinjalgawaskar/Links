@@ -5,6 +5,19 @@ html, body {
   height: 100%;
   scroll-behavior: smooth;
 }
+
+.sticky {
+  position: fixed;
+  top: 0; opacity: 70%;
+  width: 100%;
+}
+
+.skyline {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .block {
   position: relative;
   width: 580px;
@@ -23,26 +36,6 @@ h2{
   background-size: cover; 
 }
 
-.block-2{
-  background: url(ling-tang-DmmhxZhhZ4M-unsplash.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-.block-3{
-  background: url(ling-tang-DmmhxZhhZ4M-unsplash.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-.block-4{
-  background: url(ling-tang-DmmhxZhhZ4M-unsplash.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-.block-5{
-  background: url(ling-tang-DmmhxZhhZ4M-unsplash.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-
 .container {
   margin-top: 5px;
   margin-left: 0px; 
@@ -58,4 +51,17 @@ h2{
 .block-2 h1,
 .block-4 h1 {
   right: -60px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
