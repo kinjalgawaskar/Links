@@ -19,13 +19,6 @@ html, body {
   width: 100%;
 }
 
-.block {
-  position: relative;
-  width: 580px;
-  height: 460px;
-  margin: 10px 300px 20px 80px;
-}
-
 .h1 {
   font-size: 270px;
   font-family:'Poppins', sans-serif;
@@ -67,7 +60,57 @@ html, body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 50px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
+.button1 {
+  background-color: rgb(3, 3, 77);
+  padding: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: medium;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 3px;
+  color: rgb(253, 245, 212); 
+  border: 0.3px solid rgb(253, 245, 212);
+  position: fixed; margin-left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.button1:hover {
+  background-color: #234176;
+  color: rgb(253, 245, 212);
+}
+
+.button2 {
+  background-color: rgb(3, 3, 77);
+  padding: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: medium;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 3px;
+  color: rgb(253, 245, 212); 
+  border: 0.3px solid rgb(253, 245, 212);
+  position: fixed; margin-left: 1220px;
+  top: 50%; 
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.button2:hover {
+  background-color: #234176;
+  color: rgb(253, 245, 212);
+}
+
+.images {
+  width: 25%; padding: 35px;
+  margin: 15px;
+}
+
