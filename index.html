@@ -13,37 +13,35 @@
 <body>
     <style>
       body {
-        background: #0f1a46;
+        background: #0a1646;
       }
     </style>
     
-<div class= "container">
-  <div class="block block-1">
-    <h2> MOMA. </h2>
-  </div>
-  <div class="block block-2">
-    <h2> Brooklyn Bridge. </h2>
-  </div>
-  <div class="block block-3">
-    <h2> Rockefeller Centre. </h2>
-  </div>
-  <div class="block block-4">
-    <h2> Occulus. </h2>
-  </div>
-  <div class="block block-5">
-    <h2> Waldorf Astoria. </h2>
-  </div>
-</div>
+    <img src="ruler.png" alt="header scale ruler" width="100%">
 
-<h1 style="font-size: 220px;font-family: 'Space Grotesk', sans-serif;margin-top: 0%; margin-bottom: 0%;color: aliceblue;"> NYCityscapessssssssss</h1>
+<h1 style="font-size: 320px;font-family: 'Space Grotesk', sans-serif;margin-top: 0%; margin-bottom: 0%;color: aliceblue;"> NEWYORK</h1>
 
     <div class="image-container">
         <img src="skyline.png">
       </div>
 
-      <script src="script.js"></script>
+<div class= "container">
+  <div class="block block-1">
+    <h2> MOMA. </h2>
+  </div>
+</div>
 
-      
-      
+      <script src="scroll.js"></script>  
+      <script>
+
+  var blocks= document.getElementsByClassName("block");
+  var container= document.getElementsByClassName("container");
+  var hs= new HorizontalScroll.default({
+    block: blocks,
+    container: container,
+    isAnimated: true,
+    springEffect: 0.8,
+  });
+      </script>
 </body>
 </html>

@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  scroll-behavior: smooth;
 }
 .block {
   position: relative;
@@ -12,7 +12,7 @@ html, body {
   margin: 10px 300px 20px 80px;
 }
 
-h1{
+h2{
   position: absolute;
   font-family:'Space Grotesk', sans-serif;
   font-size: 64px;
@@ -20,7 +20,7 @@ h1{
 
 .block-1{
   background: url(ling-tang-DmmhxZhhZ4M-unsplash.jpg) no-repeat 50% 50%;
-  background-size: cover;
+  background-size: cover; 
 }
 
 .block-2{
@@ -44,12 +44,12 @@ h1{
 }
 
 .container {
-  margin-top: 200px;
-  margin-left: 200px;
+  margin-top: 5px;
+  margin-left: 0px; 
 }
 
 .block-1 h1,
-.block-3 h1
+.block-3 h1,
 .block-5 h1 {
   bottom: 0;
   right: -60px;
