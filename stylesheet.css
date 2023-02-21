@@ -5,6 +5,13 @@ html, body {
   height: 100%;
   background-color: rgb(3, 3, 77);
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 .sticky {
@@ -40,14 +47,14 @@ html, body {
     margin-right: 15px;
     letter-spacing: 0;
     color: rgb(20, 28, 90);
-      text-align: center;
+    text-align: center;
   }
 
   .p {
     font-size: 16px;
     font-family: 'Space Grotesk', sans-serif;
-    margin-left: 300px;
-    margin-right: 300px;
+    padding-left: 90px;
+    padding-right: 90px;
     margin-top: -1em;
     letter-spacing: 0;
     word-spacing: 2px;
@@ -57,8 +64,15 @@ html, body {
 
   @media screen and (min-width: 601px) {
     .p {
-      margin-left: 30px;
-      margin-right: 30px;
+      font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: -1em;
+    letter-spacing: 0;
+    word-spacing: 2px;
+    color: rgb(96, 101, 138);
+    text-align: center;
     }
   }
 
@@ -84,7 +98,7 @@ html, body {
   letter-spacing: 3px;
   color: rgb(253, 245, 212); 
   border: 0.3px solid rgb(253, 245, 212);
-  position: fixed; margin-left: 0px;
+  position: absolute; margin-left: 0px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -101,7 +115,7 @@ html, body {
     letter-spacing: 3px;
     color: rgb(253, 245, 212); 
     border: 0.3px solid rgb(253, 245, 212);
-    position: fixed; margin-left: 0px;
+    position: absolute; margin-left: 0px;
     top: 30%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -124,29 +138,11 @@ html, body {
   letter-spacing: 3px;
   color: rgb(253, 245, 212); 
   border: 0.3px solid rgb(253, 245, 212);
-  position: fixed; margin-left: 1220px;
+  position: absolute; margin-left: 1220px;
   top: 60%; 
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-@media screen and (min-width: 601px) {
-  .button2 {
-    padding: 12px;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-size: medium;
-    font-family: 'Space Grotesk', sans-serif;
-    letter-spacing: 3px;
-    color: rgb(253, 245, 212); 
-    border: 0.3px solid rgb(253, 245, 212);
-    position: fixed; margin-left: 0px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
 }
 
 .button2:hover {
