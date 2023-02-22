@@ -144,25 +144,15 @@ html, body {
     color: rgb(253, 245, 212);
   }
 
-.images {
-  width: 25%; padding: 5px;
+.audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks
+ {
+  width: 25%;
+  padding: 5px;
   margin: 10px;
-}
-
-#grid {
-    display: grid;
-align-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 5px;
-  }
-  
-  #grid > div {
-    font-size: 30px;
-    padding: .5em;
-    color: #ffffff;
-    background: #1c87c9;
-    text-align: center;
-  }
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 0px;
 }
 
 .scroll {
@@ -174,4 +164,89 @@ align-content: center;
 .channel-owner channel-collaborator {
   font-size: 16px;
   font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0;
+  word-spacing: 2px;
+  line-height: 23px;
+  color: rgb(96, 101, 138);
+  text-align: center;
+}
+
+.channel-count {
+  font-size: 23px;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0;
+    word-spacing: 2px;
+    line-height: 23px;
+    padding-bottom: 25px;
+    color: rgb(96, 101, 138);
+    text-align: center;
+}
+
+.full-name {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  padding-bottom: 55px;
+  word-spacing: 2px;
+  line-height: 23px;
+  color: rgb(96, 101, 138);
+  text-align: center;
+}
+
+.title {
+  font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0;
+    color: rgb(96, 101, 138);
+    text-align: center;
+}
+
+.image-thumb {
+  padding-left: 43px;
+  border-radius: 50%;
+}
+
+.image-block {
+  padding-left: 43px;
+  border-radius: 50%;
+}
+
+.link-title {
+  font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0;
+    color: rgb(96, 101, 138);
+    text-align: center;
+}
+
+.type {
+  font-size: 16px;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0;
+  color: rgb(96, 101, 138);
+  text-align: center;
+}
+
+.time-updated {
+  font-size: 16px;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0;
+  color: rgb(96, 101, 138);
+  text-align: center;
+}
+
+.time-created {
+  font-size: 16px;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0;
+  color: rgb(96, 101, 138);
+  text-align: center;
+}
+
+.description {
+  font-size: 16px;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0;
+  color: rgb(96, 101, 138);
+  text-align: center;
 }

@@ -45,14 +45,8 @@
   <button>CONTEMPORARY</button>
 </div>
 
-<div class="image-container">
-  <img class="skyline" src="skyline.png">
-</div>
-
 <section class="channel-owner channel-collaborator">
   <ul>
-  <li>Kinjal Gawaskar</li>
-  <li>Amaya Kothari</li>
 </ul>
 </section>
 
@@ -60,15 +54,140 @@
 <section>
   <h2 class="channel-count"> 30</h2>
   <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+    <li>1</li>
+    <li>2</li>
   </ul>
 </section>
 
-  <img class = images src="111_West_57th_Street.png">
-  <img class = images src="david-vives-EluKB7va4eM-unsplash.jpg">
-  <img class = images src="denys-nevozhai-HhmCIJTLuGY-unsplash.jpg">
-  <img class = images src="robert-bye-H1T4gvCscTg-unsplash.jpg">
-  <img class = images src="ling-tang-DmmhxZhhZ4M-unsplash.jpg">
+<template id="channel-owner">
+  <li>
+    <img class="avatar"> 
+    <a href= https://www.are.na/amaya-kothari class="link" > 
+      <p class="full-name"> Amaya Kothari</p> <!-- Username inserts here. -->
+    </a>
+  </li>
+</template>
   
-    
+  <!-- Images. -->
+  <template id="image-block">
+    <li>
+      <figure class="image-block">
+        <h3 class="title"></h3>
+        <picture>
+          <source class="image-thumb">
+          <source class="image-square">
+          <source class="image-display">
+          <img class="image">
+        </picture>
+        <a class="link">
+          <p class="link-title"></p>
+        </a>
+        <figcaption class="description"></figcaption>
+        <p class="time-updated"></p>
+        <p class="time-created"></p>
+      </figure>
+    </li>
+  </template>
+  <!-- Links (saved sites). -->
+  <template id="link-block">
+    <li>
+      <figure class="link-block">
+        <h3 class="title"></h3>
+        <picture>
+          <source class="image-thumb">
+          <source class="image-square">
+          <source class="image-display">
+          <img class="image">
+        </picture>
+        <a class="link">
+          <p class="link-title"></p>
+        </a>
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+        <p class="time-updated"></p>
+        <p class="time-created"></p>
+      </figure>
+    </li>
+  </template>
+  <!-- Did anyone add PDFs? -->
+  <template id="pdf-block">
+    <li>
+      <figure class="pdf-block">
+        <h3 class="title"></h3>
+        <picture>
+          <source class="image-thumb">
+          <source class="image-square">
+          <source class="image-display">
+          <img class="image">
+        </picture>
+        <a class="link"> <!-- PDF link inserts here. -->
+          <p class="link-title"></p> <!-- Repeats the block title. -->
+        </a>
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+        <p class="time-updated"></p>
+        <p class="time-created"></p>
+      </figure>
+    </li>
+  </template>
+  <!-- Text. -->
+  <template id="text-block">
+    <li>
+      <figure class="text-block">
+        <h3 class="title"></h3>
+        <div class="content"></div> <!-- Text blocks insert their HTML here. -->
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+        <p class="time-updated"></p>
+        <p class="time-created"></p>
+      </figure>
+    </li>
+  </template>
+  <!-- YouTube, Vimeo, etc. -->
+  <template id="video-embed-block">
+    <li>
+      <figure class="video-embed-block">
+        <h3 class="title"></h3>
+        <picture>
+          <source class="image-thumb">
+          <source class="image-square">
+          <source class="image-display">
+          <img class="image">
+        </picture>
+        <div class="embed"></div>
+        <a class="link">
+          <p class="link-title"></p>
+        </a>
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+        <p class="time-updated"></p>
+        <p class="time-created"></p>
+      </figure>
+    </li>
+  </template>
+  <!-- Uploaded video files. -->
+  <template id="video-file-block">
+    <li>
+      <figure class="video-file-block">
+        <h3 class="title"></h3>
+        <picture>
+          <source class="image-thumb">
+          <source class="image-square">
+          <source class="image-display">
+          <img class="image">
+        </picture>
+        <video class="video" controls></video> <!-- Video source inserts here. -->
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+        <p class="time-updated"></p>
+        <p class="time-created"></p>
+      </figure>
+    </li>
+  </template>
+
+  <div class="image-container">
+    <img class="skyline" src="skyline.png">
+  </div>
+  
 </body>
 </html>
