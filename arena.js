@@ -3,10 +3,12 @@ let markdownIt = document.createElement('script')
 markdownIt.src = 'https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.3.2/markdown-it.min.js'
 document.head.appendChild(markdownIt)
 
+
+
 const setBasics = (data) => {
 	document.title = data.title
 
-	const channelTitle = document.querySelectorAll('.nycityscapes')
+	const channelTitle = document.querySelectorAll('.channel-title')
 	const channelDescription = document.querySelectorAll('.channel-description')
 	const channelCount = document.querySelectorAll('.channel-count')
 
@@ -45,9 +47,9 @@ const setBasics = (data) => {
 		})
 	}
 
-	renderUser(data.owner, 'amaya-kothari')
+	renderUser(data.owner, 'channel-owner')
 
-	data.collaborators.forEach((user) => renderUser(user, 'kinjal-gawaskar'))
+	data.collaborators.forEach((user) => renderUser(user, 'channel-collaborator'))
 }
 
 
@@ -133,7 +135,7 @@ const showRelativeDate = (date) => {
 
 	if      (elapsed < 30)                     return `just now`
 	else if (elapsed < minute)                 return `${elapsed} seconds ago`
-	else if (elapsed < minute * 2)             return `recently`
+	else if (elapsed < minute * 2)             return `a minute ago`
 	else if (elapsed < hour)                   return `${Math.floor(elapsed / minute)} minutes ago`
 	else if (Math.floor(elapsed / hour) == 1)  return `an hour ago`
 	else if (elapsed < day)                    return `${Math.floor(elapsed / hour)} hours ago`
@@ -212,11 +214,13 @@ const renderBlock = (block, type) => {
 }
 
 
+
 const channel = document.getElementById('channel-url').href.split('/').filter(Boolean).pop()
 
-fetch(`https://api.are.na/v2/channels/${nycityscapes}?per=100`, {cache: 'no-store'})
+fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 	.then(response => response.json())
 	.then(data => {
 		setBasics(data)
 		parseBlocks(data)
 	})
+
