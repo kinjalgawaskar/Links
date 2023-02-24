@@ -16,11 +16,13 @@ html, body {
 
 @media (max-width: 768px) {
   .sticky {
-    zoom: 170%;
+    width: 200%;
   }
 }
 
 .skyline {
+  
+  position: sticky;
   bottom: 0;
   width: 100%;
   z-index: 100;
@@ -49,6 +51,7 @@ html, body {
   width: 100%;
   font-family:'Poppins', sans-serif;
   margin-top: 0em;
+  margin-left: 85px;
   letter-spacing: 0;
   text-align: center;
   word-spacing:-3ch;
@@ -96,15 +99,15 @@ html, body {
 
   @media screen and (max-width: 601px) {
     .channel-description {
-      font-size: 14px;
+      font-size: 15px;
     font-family: 'Space Grotesk', sans-serif;
     margin-top: -1em;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 90px;
+    padding-right: 0px;
     letter-spacing: 0;
     word-spacing: 2px;
     color: rgb(96, 101, 138);
-    text-align: left;
+    text-align: center;
     }
   }
 
@@ -116,6 +119,17 @@ html, body {
     text-align: center;
     padding-left: 550px;
     padding-right: 550px;
+  }
+
+  @media screen and (max-width: 601px) {
+    .channel-link {
+    color: #a7adba;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .button-container {
@@ -143,10 +157,9 @@ html, body {
     color: rgb(253, 245, 212);
   }
 
-.audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks
+ul
  {
-  width: 25%;
-  margin: 10px;
+  width: 60%;
   display: grid;
   align-content: left;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -215,19 +228,20 @@ html, body {
 }
 
 .image-block {
+  display: grid;
   border-radius: 50%;
  align-items: left;
  background-size: cover;
   height: 300px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 15px;
   padding-left: 55px;
   padding-right: 55px;
   width: 50%;
+  grid-template-columns: 30% 30% 30%;
+  aspect-ratio: 1/1;
 }
-
 
 
 .link-title {
