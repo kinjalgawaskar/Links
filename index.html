@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- SETUP -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYCityscapes</title>
+
+    <title>NEWYORK | Amaya & Kinjal</title>
+
+
+    <!-- LINKS TO FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet"> 
 
+
+<!-- FAVICON LINK -->
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 	<link rel="icon" href="favicon.png" type="image/x-icon">
 
+
+<!-- CSS FILES LINKS -->
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="stylesheet.css">
 
 
+<!-- JAVASCRIPT FILES LINKS -->
 <script src="script.js"></script>
 <script defer src="arena.js"></script>
 
+
+<!-- ICONS FOR MEDIA -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
 <body>
+  
+  <!-- FIXED RULER/SCALE ON HEADER -->
+  <img class="stickyruler" src="ruler.png" alt="header scale ruler" width="100%">
 
-    <img class="stickyruler" src="ruler.png" alt="header scale ruler" width="100%">
 
-<h1 class="channel-title" >NEWYORK</h1>
+  <!-- HEADER, SUB-HEADER & CHANNEL INFO -->
+  <section class="content">
+    <h2 class = "channel-title" >NEW YORK </h2>
+    <p class="channel-description" >The architectural landscape of New York City is the culmination of the new and the old and how the two so beautifully exist together. The buildings are a significant part of what holds the city together. This collection is a glimpse of a few landmarks that have formed the way I think about New York City.
+    </p>
+    <a href="https://www.are.na/amaya-kothari/newyork-bd6zcl4chum" id="channel-url" class="channel-link">
+      See Original Channel ☞
+    </a>
+    <h3 class = h3 >cityscapes</h3>
+    </section>
+
 
 <!-- <div class="video">
   <a href="https://www.are.na/amaya-kothari/newyork-bd6zcl4chum" id="channel-url">
@@ -35,166 +64,127 @@
   </a>
 </div> -->
 
-<h2 class = h2 >NEW YORK </h2>
 
-<p class="channel-description" >The architectural landscape of New York City is the culmination of the new and the old and how the two so beautifully exist together. The buildings are a significant part of what holds the city together. This collection is a glimpse of a few landmarks that have formed the way I think about New York City.
-</p>
-
-<a href="https://www.are.na/amaya-kothari/newyork-bd6zcl4chum" id="channel-url" class="channel-link"> See Original Channel ☞</a>
-
-<h3 class = h3 >cityscapes</h3>
-
+<!-- TOGGLE FILTER BUTTONS -->
 <div class="button-container">
   <button>VINTAGE</button> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <button>CONTEMPORARY</button>
 </div>
+
+
+ <!-- ALL CONTENT -->
+ <ul class="
+ audio-embed-blocks 
+ audio-file-blocks 
+ image-blocks 
+ embed-blocks 
+ link-blocks 
+ pdf-blocks 
+ text-blocks 
+ video-embed-blocks 
+ video-file-blocks">
+</ul>
+
+
+<!-- Images. --> 
+<template id="image-block">
+  <li>
+      <figure class="image-block">
+          <picture>
+          <source class="image-display">
+          <img class="image">
+          </picture>
+      </figure>
+  </li>
+</template>
+
+
+<!-- Articles / PDF's -->
+<template id="pdf-block">
+<li>
+<figure class="pdf-block">
+<picture>
+<source class="image-display">
+<a class="link"><img class="image"></a>
+</picture>
+</figure>
+</li>
+</template>
+
+
+<!-- YouTube, Vimeo, etc. -->
+<template id="video-embed-block">
+<li>
+<figure class="video-embed-block">
+  <picture>
+      <source class="image-display">
+
+      <a class="link"><img class="image"></a>
+  </picture>
+</figure>
+</li>
+</template>
+
+
+<!-- Uploaded video files. -->
+<template id="video-file-block">
+<li>
+<figure class="video-file-block">
+  <picture>
+      <source class="image-display">
+      <a class="link"><img class="image"></a>
+  </picture>
+  <video class="video" controls></video>
+</figure>
+</li>
+</template>
+
+
+<!-- Links (saved sites). -->
+<template id="link-block">
+<li>
+<figure class="link-block">
+  <picture>
+      <source class="image-display">
+      <a class="link"><img class="image"></a>
+  </picture>
+</figure>
+</li>
+</template>
+
+
+<!-- Spotify, Soundcloud, etc. -->
+<template id="audio-embed-block">
+<li>
+<figure class="audio-embed"> <!-- You can use the container classes to style a whole type. -->
+<picture>
+<source class="image-display">
+          <a class="link"><img class="image"></a>
+</picture>
+</figure>
+</li>
+</template>
+
+
+<!-- Uploaded audio files. -->
+<template id="audio-file-block">
+<li>
+  <figure class="audio-file-block">
+      <picture>
+          <source class="image-display">
+          <a class="link"><img class="image"></a>
+      </picture>
+      <audio class="audio" controls></audio>
+  </figure>
+</li>
+</template>
 
 <section class="channel-owner channel-collaborator">
   <ul>
 </ul>
 </section>
-  
-  <!-- Images. -->
-  <template id="image-block">
-    <li>
-      <figure class="image-block">
-        <picture>
-          <source class="image-thumb">
-          <source class="image-square">
-          <source class="image-display">
-          <img class="image">
-        </picture>
-        <a class="link">
-        </a>
-        <p class="time-updated"></p>
-      </figure>
-    </li>
-  </template>
+ 
 
-
-  <!-- Links (saved sites). -->
-  <template id="link-block">
-    <li>
-      <figure class="link-block">
-        <picture>
-          <source class="image-thumb">
-          <source class="image-square">
-          <source class="image-display">
-          <img class="image">
-        </picture>
-        <a class="link">
-        </a>
-        <p class="type"></p>
-        <p class="time-updated"></p>
-      </figure>
-    </li>
-  </template>
-  
-
-  <!-- Text. -->
-  <template id="text-block">
-    <li>
-      <figure class="text-block">
-        <div class="content"></div> <!-- Text blocks insert their HTML here. -->
-        <p class="type"></p>
-        <p class="time-updated"></p>
-      </figure>
-    </li>
-  </template>
-
-
-  <!-- YouTube, Vimeo, etc. -->
-  <template id="video-embed-block">
-    <li>
-      <figure class="video-embed-block">
-        <picture>
-          <source class="image-thumb">
-          <source class="image-square">
-          <source class="image-display">
-          <img class="image">
-        </picture>
-        <div class="embed"></div>
-        <a class="link">
-        </a>
-        <p class="type"></p>
-        <p class="time-updated"></p>
-      </figure>
-    </li>
-  </template>
-
-
-  <!-- Uploaded video files. -->
-  <template id="video-file-block">
-    <li>
-      <figure class="video-file-block">
-        <picture>
-          <source class="image-thumb">
-          <source class="image-square">
-          <source class="image-display">
-          <img class="image">
-        </picture>
-        <video class="video" controls></video> <!-- Video source inserts here. -->
-        <p class="type"></p>
-        <p class="time-updated"></p>
-      </figure>
-    </li>
-  </template>
-
-<section>
-  <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
-  </ul>
-</section>
-
-  <div class="image-container">
-    <img class="skyline" src="skyline.png">
-  </div>
-
-  <div class="bottom-nav">
-    <a href="#" class="nav-item active"><i class="fas fa-home"></i> Home</a>
-    <a href="#" class="nav-item"><i class="fas fa-search"></i> Search</a>
-  </div>
-
-
-
-
-  <main>
-    <ul class="image-blocks link-blocks text-blocks">
-    </ul>
-  </main>
-
-
-  <!-- Images. -->
-  <template id="image-block">
-    <li class="image-block">
-      <figure>
-        <img class="image-square">
-      </figure>
-      <aside>
-        <img class="image">
-        <p class="title"></p>
-      </aside>
-    </li>
-  </template>
-
-
-  <!-- Links. -->
-  <template id="link-block">
-    <li class="link-block">
-      <figure>
-        <img class="image-square">
-      </figure>
-    </li>
-  </template>
-
-
-  <!-- Text. -->
-  <template id="text-block">
-    <li class="text-block">
-      <figure class="content">
-      </figure>
-    </li>
-  </template>
-
+    
 </body>
 </html>
