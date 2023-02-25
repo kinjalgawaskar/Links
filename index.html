@@ -59,7 +59,6 @@
   <template id="image-block">
     <li>
       <figure class="image-block">
-        <h3 class="title"></h3>
         <picture>
           <source class="image-thumb">
           <source class="image-square">
@@ -67,20 +66,17 @@
           <img class="image">
         </picture>
         <a class="link">
-          <p class="link-title"></p>
         </a>
-        <!-- description.
-        <figcaption class="description"></figcaption> -->
         <p class="time-updated"></p>
-        <p class="time-created"></p>
       </figure>
     </li>
   </template>
+
+
   <!-- Links (saved sites). -->
   <template id="link-block">
     <li>
       <figure class="link-block">
-        <h3 class="title"></h3>
         <picture>
           <source class="image-thumb">
           <source class="image-square">
@@ -88,53 +84,30 @@
           <img class="image">
         </picture>
         <a class="link">
-          <p class="link-title"></p>
         </a>
         <p class="type"></p>
         <p class="time-updated"></p>
-        <p class="time-created"></p>
       </figure>
     </li>
   </template>
-  <!-- Did anyone add PDFs? -->
-  <template id="pdf-block">
-    <li>
-      <figure class="pdf-block">
-        <h3 class="title"></h3>
-        <picture>
-          <source class="image-thumb">
-          <source class="image-square">
-          <source class="image-display">
-          <img class="image">
-        </picture>
-        <a class="link"> <!-- PDF link inserts here. -->
-          <p class="link-title"></p> <!-- Repeats the block title. -->
-        </a>
-        <p class="type"></p>
-        <p class="time-updated"></p>
-        <p class="time-created"></p>
-      </figure>
-    </li>
-  </template>
+  
+
   <!-- Text. -->
   <template id="text-block">
     <li>
       <figure class="text-block">
-        <h3 class="title"></h3>
         <div class="content"></div> <!-- Text blocks insert their HTML here. -->
-        <!-- description.
-        <figcaption class="description"></figcaption>  -->
         <p class="type"></p>
         <p class="time-updated"></p>
-        <p class="time-created"></p>
       </figure>
     </li>
   </template>
+
+
   <!-- YouTube, Vimeo, etc. -->
   <template id="video-embed-block">
     <li>
       <figure class="video-embed-block">
-        <h3 class="title"></h3>
         <picture>
           <source class="image-thumb">
           <source class="image-square">
@@ -143,21 +116,18 @@
         </picture>
         <div class="embed"></div>
         <a class="link">
-          <p class="link-title"></p>
         </a>
-                <!-- description. 
-        <figcaption class="description"></figcaption>  -->
         <p class="type"></p>
         <p class="time-updated"></p>
-        <p class="time-created"></p>
       </figure>
     </li>
   </template>
+
+
   <!-- Uploaded video files. -->
   <template id="video-file-block">
     <li>
       <figure class="video-file-block">
-        <h3 class="title"></h3>
         <picture>
           <source class="image-thumb">
           <source class="image-square">
@@ -165,17 +135,13 @@
           <img class="image">
         </picture>
         <video class="video" controls></video> <!-- Video source inserts here. -->
-        <!-- description.
-        <figcaption class="description"></figcaption>  -->
         <p class="type"></p>
         <p class="time-updated"></p>
-        <p class="time-created"></p>
       </figure>
     </li>
   </template>
 
 <section>
-  <h2 class="channel-count"> 30</h2>
   <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
   </ul>
 </section>
@@ -188,8 +154,47 @@
     <a href="#" class="nav-item active"><i class="fas fa-home"></i> Home</a>
     <a href="#" class="nav-item"><i class="fas fa-search"></i> Search</a>
   </div>
-  
-  
+
+
+
+
+  <main>
+    <ul class="image-blocks link-blocks text-blocks">
+    </ul>
+  </main>
+
+
+  <!-- Images. -->
+  <template id="image-block">
+    <li class="image-block">
+      <figure>
+        <img class="image-square">
+      </figure>
+      <aside>
+        <img class="image">
+        <p class="title"></p>
+      </aside>
+    </li>
+  </template>
+
+
+  <!-- Links. -->
+  <template id="link-block">
+    <li class="link-block">
+      <figure>
+        <img class="image-square">
+      </figure>
+    </li>
+  </template>
+
+
+  <!-- Text. -->
+  <template id="text-block">
+    <li class="text-block">
+      <figure class="content">
+      </figure>
+    </li>
+  </template>
 
 </body>
 </html>
