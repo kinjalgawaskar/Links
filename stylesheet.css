@@ -8,16 +8,10 @@ html, body {
   font-size: 16px;
 }
 
-.sticky {
+.stickyruler {
   position: fixed ;
   top: 0; opacity: 70%;
   width: 100%;
-}
-
-@media (max-width: 768px) {
-  .sticky {
-    width: 200%;
-  }
 }
 
 .skyline {
@@ -159,14 +153,44 @@ html, body {
 
 ul
  {
-  width: 60%;
   display: grid;
-  align-content: left;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 0px;
-  padding: 15px;
-  padding-left: 55px;
-  padding-right: 55px;
+  border-radius: 30px;
+}
+
+link-block
+ {
+  display: grid;
+  border-radius: 30px;
+}
+
+pdf-block
+ {
+  display: grid;
+  border-radius: 30px;
+}
+
+video-embed-block
+ {
+  display: grid;
+  border-radius: 30px;
+}
+
+text-block
+ {
+  display: grid;
+  border-radius: 30px;
+}
+
+video-file-block
+ {
+  display: grid;
+  border-radius: 30px;
+}
+
+video-file-block
+ {
+  display: grid;
+  border-radius: 30px;
 }
 
 .scroll {
@@ -219,28 +243,13 @@ ul
 }
 
 .image-thumb {
-  padding-left: 43px;
-  border-radius: 50%;
-  padding: 15px;
-  padding-left: 55px;
-  padding-right: 55px;
-  width: 50%;
+  display: grid;
+  border-radius: 30px;
 }
 
 .image-block {
   display: grid;
-  border-radius: 50%;
- align-items: left;
- background-size: cover;
-  height: 300px;
-  display: grid;
-  grid-gap: 20px;
-  padding: 15px;
-  padding-left: 55px;
-  padding-right: 55px;
-  width: 50%;
-  grid-template-columns: 30% 30% 30%;
-  aspect-ratio: 1/1;
+  border-radius: 30px;
 }
 
 
@@ -297,4 +306,41 @@ ul
   padding: 15px;
   padding-left: 55px;
   padding-right: 55px;
+}
+
+.sticky-btn:hover {
+  background-color: #555;
+}
+
+/*bottom navigation menu for phone*/
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fcfbf4;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.nav-item {
+  display: flex;
+  font-family: 'Space Grotesk', sans-serif; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+
+
+.active {
+  color: #272094;
 }
