@@ -133,7 +133,7 @@ const showRelativeDate = (date) => {
 	const month =  day * 30
 	const year =   month * 12
 
-	if      (elapsed < 30)                     return `just now`
+	if      (elapsed < 30)                     return `right now`
 	else if (elapsed < minute)                 return `${elapsed} seconds ago`
 	else if (elapsed < minute * 2)             return `a minute ago`
 	else if (elapsed < hour)                   return `${Math.floor(elapsed / minute)} minutes ago`
