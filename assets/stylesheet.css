@@ -1,5 +1,5 @@
 html, body {
-  background-color: rgb(16, 21, 84);
+  background-color: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }
 
@@ -8,10 +8,16 @@ body {
   width: 77%;
 }
 
+:root{
+  --body-copy:15px;
+  --body-copy-line-height: calc(var(--body-copy)*1.2);
+  --main-heading: 30vw;
+  --main-heading-line-height: calc(var(--main-heading));
+}
+
 .stickyruler {
   position: fixed ;
-  top: 0;
-  left:0;
+  top: 0px;
   z-index: 999;
   opacity: 100%;
   width: 100%;
@@ -38,7 +44,7 @@ body {
   font-size: 15vw;
   width: 100%;
   letter-spacing: -5px;
-  color: rgb(255, 254, 241);
+  color: rgb(0, 42, 77);
   font-family: 'MyCustomFont', sans-serif;
   font-weight: 900;
   font-style: oblique;
@@ -53,12 +59,12 @@ body {
     font-style: oblique;
     width: 100%;
     letter-spacing: -15px;
-    color: rgb(255, 251, 238);
+    color: rgb(0, 42, 77);
     font-family: 'MyCustomFont', sans-serif;
     font-weight: 900;
     line-height: 11vw;
-    margin-top: 111px;
-    margin-bottom: 6px;
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
 }
 
@@ -67,38 +73,27 @@ body {
     width: 100%;
     letter-spacing: 0;
     padding-left: 120px;
-    margin-top: -25px;
-    color: rgb(81, 80, 121);
+    margin-top: -10px;
+    color: rgb(251, 249, 242);
     font-family: 'Space Grotesk', sans-serif;
     line-height: 11vw;
-    font-style: oblique;
   }
 
   @media screen and (max-width: 601px) {
     .h3 {
-      font-size: 14vw;
-      width: 100%;
-      letter-spacing: 0;
-      padding-left: 0px;
-      margin-top: 15px;
-      color: rgb(115, 115, 152);
-      font-family: 'Space Grotesk', sans-serif;
-      line-height: 11vw;
-      font-style: oblique;
+      display: none;}
     }
-  }
 
   .channel-description {
     font-size: 16px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 100;
     margin-top: 3em;
-    padding: 10px;
-    letter-spacing: 0px;
-    word-spacing: 1px;
+    letter-spacing: 0;
+    word-spacing: 2px;
     line-height: 23px;
-    color: rgb(255, 255, 255);
-    text-align: left;
+    color: rgb(0, 0, 0);
+    text-align: center;
     margin-bottom: 2em;
   }
 
@@ -182,7 +177,7 @@ figure {
     gap: 1em;
 }
 
-/*bottom navigation menu for phone*/
+/*bottom navigation menu for phone
 
 .bottom-nav {
   position: fixed;
@@ -243,7 +238,7 @@ p{
         align-items: center;
     }
 
-    @media screen and (min-width: 700px ) {
+    @media screen and (min-width: 500px ) {
       ul{
           --columns:3;
           align-items: center;
@@ -254,29 +249,11 @@ p{
         display: block;
         width: 100%;
         border-radius: 15px;
-        padding: 1px;
+        padding: 9px;
         object-fit: cover;
         aspect-ratio: 2/1.3;
         margin-top: 15px;
         align-items: center;
-        filter:grayscale(100);
-      }
-    
-      img:hover {
-        filter: none;
-        transition-duration: 2s;
-        cursor:pointer;
-      }
-
-      .symbols {
-        display: flex;
-        align-items: center; 
-        margin-top: 1em;
-        justify-content: center;
-      }
-
-      .material-symbols-outlined {
-        padding: 30px;
-        font-size: 44px;
-        color: #88b0ab;
+       
+        
       }
