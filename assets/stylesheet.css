@@ -41,27 +41,42 @@ body {
 }
 
 .channel-title {
-  font-size: 30vw;
+  font-size: 15vw;
   width: 100%;
-  letter-spacing: 0;
-  color: rgb(32, 36, 130);
+  letter-spacing: -5px;
+  color: rgb(0, 42, 77);
   font-family: 'MyCustomFont', sans-serif;
+  font-weight: 900;
+  font-style: oblique;
 	line-height: 11vw;
-	margin-top: 70px;
+	margin-top: 30px;
+  margin-bottom: -30px;
 } 
 
+@media screen and (min-width: 601px) {
+  .channel-title {
+    font-size: 15.2vw;
+    font-style: oblique;
+    width: 100%;
+    letter-spacing: -15px;
+    color: rgb(0, 42, 77);
+    font-family: 'MyCustomFont', sans-serif;
+    font-weight: 900;
+    line-height: 11vw;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+}
 
   .h3 {
     font-size: 10vw;
     width: 100%;
-    align-items: center;
-    align-content: center;
     letter-spacing: 0;
-    margin: 0px;
-    color: rgb(237, 235, 226);
-    font-family: 'MyCustomFont', sans-serif;
+    padding-left: 120px;
+    margin-top: -10px;
+    color: rgb(251, 249, 242);
+    font-family: 'Space Grotesk', sans-serif;
     line-height: 11vw;
-    margin-top: 70px;
   }
 
   @media screen and (max-width: 601px) {
@@ -72,17 +87,18 @@ body {
   .channel-description {
     font-size: 16px;
     font-family: 'Space Grotesk', sans-serif;
+    font-weight: 100;
     margin-top: 3em;
     letter-spacing: 0;
     word-spacing: 2px;
     line-height: 23px;
-    color: rgb(96, 101, 138);
+    color: rgb(0, 0, 0);
     text-align: center;
     margin-bottom: 2em;
   }
 
   .channel-link {
-    color: #06bea9;
+    color: #88b0ab;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 30px;
     letter-spacing: 1px;
@@ -103,7 +119,7 @@ body {
   }
   }
 
-  /* Vintage & Contemporary buttons
+  /* Vintage & Contemporary buttons*/
 
   .button-container {
     width: 100%;
@@ -190,26 +206,8 @@ figure {
 
 .active {
   color: #272094;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-/*HEADING*/
-.channel-title{
-	font-family: 'Space Grotesk', sans-serif;
-	font-size: 30vw;
-	line-height: 15vw;
-	margin-top: 50px;
 }
+
 
 p{
 	margin-bottom: 10px;
