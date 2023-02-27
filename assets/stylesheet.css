@@ -1,10 +1,10 @@
 html, body {
-  background-color: rgb(230, 226, 217);
+  background-color: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }
 
 body {
- 
+  margin: auto;
   width: 96%;
 }
 
@@ -35,11 +35,11 @@ body {
 }
 
 .channel-title {
-  font-size: 19vw;
+  font-size: 15vw;
   width: 100%;
   letter-spacing: -5px;
-  color: rgb(57, 26, 10);
-  font-family: 'MyCustomFont';
+  color: rgb(255, 254, 241);
+  font-family: 'MyCustomFont', sans-serif;
   font-weight: 900;
   font-style: oblique;
 	line-height: 11vw;
@@ -49,11 +49,11 @@ body {
 
 @media screen and (min-width: 601px) {
   .channel-title {
-    font-size: 19vw;
+    font-size: 15.2vw;
     font-style: oblique;
     width: 100%;
     letter-spacing: -15px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 251, 238);
     font-family: 'MyCustomFont', sans-serif;
     font-weight: 900;
     line-height: 11vw;
@@ -63,12 +63,12 @@ body {
 }
 
   .h3 {
-    font-size: 15vw;
+    font-size: 10vw;
     width: 100%;
     letter-spacing: 0;
     padding-left: 120px;
     margin-top: -25px;
-    color: rgb(44, 228, 164);
+    color: rgb(55, 234, 171);
     font-family: 'Space Grotesk', sans-serif;
     line-height: 11vw;
     font-style: oblique;
@@ -81,7 +81,7 @@ body {
       letter-spacing: 0;
       padding-left: 0px;
       margin-top: 15px;
-      color: (0, 255, 166);
+      color: rgb(109, 223, 123);
       font-family: 'Space Grotesk', sans-serif;
       line-height: 11vw;
       font-style: oblique;
@@ -93,16 +93,13 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 100;
     margin-top: 3em;
+    padding: 10px;
     letter-spacing: 0px;
     word-spacing: 1px;
     line-height: 23px;
-    color: rgb(0, 255, 166);
+    color: rgb(243, 242, 236);
     text-align: left;
     margin-bottom: 2em;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    background-color: #000000;
   }
 
   .channel-link {
@@ -182,7 +179,7 @@ figure {
     width: 100%;
     align-items: center;
     align-content: center;
-    gap: 0.1em;
+    gap: 1em;
 }
 
 /*bottom navigation menu for phone*/
@@ -219,6 +216,21 @@ figure {
 
 p{
 	margin-bottom: 10px;
+}
+
+/*MEDIA FILTER*/
+
+.media{
+	display: flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -258,20 +270,14 @@ p{
       }
 
       .image-blocks {
-        filter: opacity(15%);
+        filter: opacity(5%);
       }
-
-      @media screen and (max-width: 700px ) {
-        .image-blocks{
-          filter: opacity(100%);
-        }
-    }
 
       .image-blocks:hover {
         filter: opacity(100%);
         transition-duration: 2s;
       }
-    
+
       .symbols {
         display: flex;
         align-items: center; 
@@ -280,12 +286,12 @@ p{
       }
 
       .material-symbols-outlined {
-        padding: 10px;
-        font-size: 20px;
+        padding: 30px;
+        font-size: 44px;
         color: #88b0ab;
       }
 
-      /* .media{
+      .media{
         display: flex;
           flex-wrap: wrap;
         flex-direction: row;
@@ -298,5 +304,5 @@ p{
           padding-top: 20px;
           padding-bottom: 20px;
       }
-       */
+      
       
