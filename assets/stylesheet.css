@@ -5,7 +5,7 @@ html, body {
 
 body {
   margin: auto;
-  width: 77%;
+  width: 96%;
 }
 
 .stickyruler {
@@ -13,7 +13,7 @@ body {
   top: 0;
   left:0;
   z-index: 999;
-  opacity: 100%;
+  opacity: 50%;
   width: 100%;
   aspect-ratio: 0 /0;
   width: 100%;
@@ -97,7 +97,7 @@ body {
     letter-spacing: 0px;
     word-spacing: 1px;
     line-height: 23px;
-    color: rgb(255, 255, 255);
+    color: rgb(243, 242, 236);
     text-align: left;
     margin-bottom: 2em;
   }
@@ -265,7 +265,7 @@ p{
       img:hover {
         filter: none;
         transition-duration: 2s;
-        cursor:pointer;
+        cursor: cell;
       }
 
       .symbols {
@@ -280,3 +280,19 @@ p{
         font-size: 44px;
         color: #88b0ab;
       }
+
+      .media{
+        display: flex;
+          flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+          align-items: center;
+          position: sticky;
+          top: 0;
+          color: rgb(145, 145, 145);
+          margin-top: 20px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+      }
+      
+      

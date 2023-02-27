@@ -33,7 +33,7 @@ function myFunction() {
   }
 }
 
-imageButton.onclick = function() {
+imageButton.onClick = function() {
   console.log('images')
   //add all images
   body.appendChild(allImages)
@@ -42,7 +42,7 @@ imageButton.onclick = function() {
   };
 
 
-linksButton..onclick = function() {
+linksButton.onClick = function() {
   console.log('links')
   //remove all links
   body.appendChild(allLinks)
