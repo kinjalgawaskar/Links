@@ -2,36 +2,36 @@ window.arenaCallback = () => {
 	// Put your JavaScript in here!
 	// This will run after Are.na’s API returns your data.
 
-  // window.onscroll = function() {myFunction()};
+  window.onscroll = function() {myFunction()};
 
-// var sticky = header.offsetTop;
-let body = document.querySelector('body')
-let imageButton = document.querySelector('.image-button')
-let linksButton = document.querySelector('.links-button')
-let allImages = document.querySelector('#image-block')
-let allLinks = document.querySelector('#link-block')
+var sticky = header.offsetTop;
+let body = querySelector('body')
+let imageButton = querySelector('.image-button')
+let linksButton = querySelector('.links-button')
+let allImages = querySelector('.#image-block')
+let allLinks = querySelector('.#link-block')
 
 
 
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
-// window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()};
 
-// var sticky = header.offsetTop;
+var sticky = header.offsetTop;
 
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 imageButton.onclick = function() {
   console.log('images')
@@ -42,7 +42,7 @@ imageButton.onclick = function() {
   };
 
 
-linksButton.onclick = function() {
+linksButton..onclick = function() {
   console.log('links')
   //remove all links
   body.appendChild(allLinks)
