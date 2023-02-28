@@ -129,13 +129,7 @@ body {
 
   @media screen and (max-width: 601px) {
     .channel-link {
-    color: #f2efe8;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 20px;
-    margin: auto;
-    padding: auto;
-    letter-spacing: 1px;
-    padding-bottom: 1em;
+      width:auto;
   }
   }
 
