@@ -1,11 +1,16 @@
 html, body {
-  background-color: rgb(230, 226, 217);
+  background-color: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }
 
 body {
+<<<<<<< HEAD
  margin: auto;
   width: 98%;
+=======
+  margin: auto;
+  width: 96%;
+>>>>>>> parent of 84c871e (edited colors and margins)
 }
 
 .stickyruler {
@@ -35,11 +40,16 @@ body {
 }
 
 .channel-title {
-  font-size: 19vw;
+  font-size: 15vw;
   width: 100%;
   letter-spacing: -5px;
+<<<<<<< HEAD
   color: rgb(57, 26, 10);
   font-family: 'MyCustomFont'; 
+=======
+  color: rgb(255, 254, 241);
+  font-family: 'MyCustomFont', sans-serif;
+>>>>>>> parent of 84c871e (edited colors and margins)
   font-weight: 900;
 	line-height: 11vw;
 	margin-top: 30px;
@@ -48,12 +58,17 @@ body {
 
 @media screen and (min-width: 601px) {
   .channel-title {
-    font-size: 19vw;
+    font-size: 15.2vw;
     font-style: oblique;
     width: 100%;
     letter-spacing: -15px;
+<<<<<<< HEAD
     color: rgb(0, 0, 0);
     font-family: 'Thunder-BoldHC', sans-serif;
+=======
+    color: rgb(255, 251, 238);
+    font-family: 'MyCustomFont', sans-serif;
+>>>>>>> parent of 84c871e (edited colors and margins)
     font-weight: 900;
     line-height: 11vw;
     margin-top: 109px;
@@ -62,7 +77,11 @@ body {
 }
 
   .h3 {
+<<<<<<< HEAD
     font-size: 16vw;
+=======
+    font-size: 10vw;
+>>>>>>> parent of 84c871e (edited colors and margins)
     width: 100%;
     letter-spacing: 0;
     padding-left: 0px;
@@ -70,7 +89,11 @@ body {
     padding-right: 0px;
     justify-content: center;
     margin-top: -25px;
+<<<<<<< HEAD
     color: rgb(4, 203, 134);
+=======
+    color: rgb(55, 234, 171);
+>>>>>>> parent of 84c871e (edited colors and margins)
     font-family: 'Space Grotesk', sans-serif;
     line-height: 11vw;
     font-style: oblique;
@@ -84,7 +107,11 @@ body {
       letter-spacing: 0;
       padding-left: 0px;
       margin-top: 15px;
+<<<<<<< HEAD
       color: rgb(4, 203, 134);
+=======
+      color: rgb(109, 223, 123);
+>>>>>>> parent of 84c871e (edited colors and margins)
       font-family: 'Space Grotesk', sans-serif;
       line-height: 11vw;
       font-style: oblique;
@@ -96,15 +123,22 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 100;
     margin-top: 3em;
+    padding: 10px;
     letter-spacing: 0px;
     word-spacing: 1px;
     line-height: 23px;
+<<<<<<< HEAD
     color: rgb(0, 0, 0);
     text-align: left;
     margin-bottom: 2em;
     width: 80%;
     padding-top: 30px;
     padding-bottom: 20px;
+=======
+    color: rgb(243, 242, 236);
+    text-align: left;
+    margin-bottom: 2em;
+>>>>>>> parent of 84c871e (edited colors and margins)
   }
 
   .channel-link {
@@ -184,7 +218,11 @@ figure {
     width: 100%;
     align-items: center;
     align-content: center;
+<<<<<<< HEAD
     gap: 0.7em;
+=======
+    gap: 1em;
+>>>>>>> parent of 84c871e (edited colors and margins)
 }
 
 /*bottom navigation menu for phone*/
@@ -221,6 +259,21 @@ figure {
 
 p{
 	margin-bottom: 10px;
+}
+
+/*MEDIA FILTER*/
+
+.media{
+	display: flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -272,7 +325,13 @@ p{
         filter:invert(1)
       }
 
+<<<<<<< HEAD
      
+=======
+      .image-blocks {
+        filter: opacity(5%);
+      }
+>>>>>>> parent of 84c871e (edited colors and margins)
 
       .image-blocks:hover {
         filter: opacity(100%);
@@ -287,11 +346,12 @@ p{
       }
 
       .material-symbols-outlined {
-        padding: 10px;
-        font-size: 20px;
+        padding: 30px;
+        font-size: 44px;
         color: #88b0ab;
       }
 
+<<<<<<< HEAD
       .collaborator {
         font-family: 'Space Grotesk', sans-serif;
         padding: 40px;
@@ -301,6 +361,9 @@ p{
       }
 
       /* .media{
+=======
+      .media{
+>>>>>>> parent of 84c871e (edited colors and margins)
         display: flex;
           flex-wrap: wrap;
         flex-direction: row;
@@ -313,5 +376,5 @@ p{
           padding-top: 20px;
           padding-bottom: 20px;
       }
-       */
+      
       
