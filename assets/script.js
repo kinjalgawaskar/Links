@@ -12,27 +12,6 @@ let allImages = document.querySelector('#image-block')
 let allLinks = document.querySelector('#link-block')
 
 
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-
-// window.onscroll = function() {myFunction()};
-
-// var sticky = header.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-
 imageButton.onclick = function() {
   console.log('images')
   //add all images
@@ -69,3 +48,21 @@ menuItems.forEach((item) => {
 
 }
 
+
+
+
+/*Icon Toggle Selectors*/
+
+function openTab(tabName) {
+  var i, tabContent, tabButton;
+  tabContent = document.getElementsByClassName(“tab-pane”);
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].classList.remove(“active”);
+  }
+  tabButton = document.getElementsByClassName(“filter-button”);
+  for (i = 0; i < tabButton.length; i++) {
+    tabButton[i].classList.remove(“active”);
+  }
+  document.getElementById(tabName).classList.add(“active”);
+  event.currentTarget.classList.add(“active”);
+}
