@@ -151,18 +151,6 @@ p{
 	margin-bottom: 10px;
 }
 
-/*ICONS*/
-
-.media{
-	flex-direction: row;
-	justify-content: center;
-  color: aliceblue;
-  bottom: 0;
-  position: fixed;
-  z-index: 999;
-  background-color: #ffffff;
-}
-
 
 /*CONTENT*/
     ul {
@@ -210,6 +198,8 @@ p{
 
       .image {
         filter:grayscale(100);
+        animation: ;
+        animation-duration: 2s;
       }
 
       .image:hover {
@@ -224,10 +214,44 @@ p{
         justify-content: center;
       }
 
+      
+      /*ICONS*/
+
+.media{
+	flex-direction: row;
+  width: 100%;
+  font-size: small;
+	justify-content: center;
+  bottom: 0;
+  position: fixed;
+  z-index: 999;
+  background-color: #000000;
+}
+
       .material-symbols-outlined {
-        padding: 30px;
-        font-size: 44px;
-        color: #000000;
+        padding: 5px;
+        font-size: 15px;
+        color: #ffffff;
+        object-position: center center;
+        appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-image: initial;
       }
 
       .collaborator {
