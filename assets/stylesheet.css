@@ -137,53 +137,6 @@ body {
   }
   }
 
-  /* Vintage & Contemporary buttons*/
-
-  .button-container {
-    width: 100%;
-    padding-left: 450px;
-    padding-bottom: 63px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .button-container {
-    display: none;
-  }
-}
-  
-  .button-container button {
-    display: inline-block;
-    margin-right: 10px; 
-    margin-left: 33px;
-    background-color: rgb(3, 3, 77);
-    margin-left: 80px;
-    padding: 10px;
-      font-size: medium;
-      font-family: 'Space Grotesk', sans-serif;
-      letter-spacing: 3px;
-      color: rgb(253, 245, 212); 
-      border: 0.3px solid rgb(253, 245, 212);
-    }
-
-
-  @media screen and (max-width: 601px) {
-    .button-container button {
-    display: none;
-  }
-}
-
-
-  .button-container button:hover {
-    background-color: #234176;
-    color: rgb(253, 245, 212);
-  }
-
-  @media screen and (max-width: 601px) {
-    .button-container button:hover{
-    display: none;
-  }
-} 
-
 section,
 ul,
 figure {
@@ -249,19 +202,12 @@ p{
     }
 
       img:hover {
-        filter: none;
         transition-duration: 2s;
-        cursor: cell;
-        filter:invert(1)
+        filter: invert(1);
       }
 
       .image-blocks {
         filter: opacity(100%);
-      }
-
-      .image-blocks:hover {
-        filter: opacity(100%);
-        transition-duration: 2s;
       }
 
       .symbols {
