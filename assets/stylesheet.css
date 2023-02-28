@@ -7,6 +7,8 @@ html, body {
 body {
  margin: auto;
   width: 98%;
+  box-sizing: border-box;
+    padding: auto;
 }
 
 /*custom font used*/
@@ -45,14 +47,14 @@ body {
 }
 
 .channel-title {
-  font-size: 47vw;
+  font-size: 34.5vw;
   width: 100%;
   letter-spacing: 2px;
   color: rgb(210, 62, 8);
   font-family:'Thunder-BoldLC', sans-serif;
   font-weight: 900;
 	line-height: 11vw;
-	margin-top: 85px;
+	margin-top: 60px;
   margin-bottom: -30px;
 } 
 
@@ -61,7 +63,7 @@ body {
     font-size: 36vw;
     width: 100%;
     letter-spacing: 0px;
-    color: rgb(0, 0, 0);
+    color: rgb(210, 62, 8);
     font-family: 'Thunder-BoldLC', sans-serif;
     font-weight: 900;
     line-height: 11vw;
@@ -76,11 +78,10 @@ body {
     width: 100%;
     letter-spacing: 0;
     padding-left: 0px;
-    margin-top: -1em;
     padding-right: 0px;
     justify-content: center ;
     margin-top: -20px;
-    color: rgb(4, 203, 134);
+    color: rgb(4, 169, 156);
     font-family: 'Space Grotesk', sans-serif;
     line-height: 11vw;
     font-style: oblique;
@@ -88,14 +89,14 @@ body {
 
   @media screen and (max-width: 601px) {
     .h3 {
-      font-size: 25vw;
+      font-size: 18vw;
       width: 100%;
       justify-content: center ;
       letter-spacing: 0;
       padding-left: 0px;
-      margin-top: 25px;
+      margin-top: 18px;
       text-align: center;
-      color: rgb(4, 50, 203);
+      color: rgb(4, 169, 156);
       font-family: 'Space Grotesk', sans-serif;
       line-height: 11vw;
       font-style: oblique;
@@ -103,14 +104,14 @@ body {
   }
 
   .channel-description {
-    font-size: 19px;
+    font-size: 15px;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 100;
-    margin-top: 3em;
+    margin-top: 1em;
     padding-left: 25%;
     letter-spacing: 0px;
     word-spacing: 1px;
-    line-height: 23px;
+    line-height: 20px;
     color: rgb(0, 0, 0);
     text-align: left;
     justify-content: center;
@@ -122,19 +123,20 @@ body {
   }
 
   .channel-link {
-    color: #000000;
+    color: #ffffff;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 30px;
     letter-spacing: 1px;
     padding-left: 40px;
     padding-right: 0px;
     text-align: center;
+    background-color: #000000;
     padding-bottom: 40px;
   }
 
   @media screen and (max-width: 601px) {
     .channel-link {
-    color: #000000;
+    color: #f2efe8;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
     margin: auto;
@@ -170,7 +172,7 @@ p{
     @media screen and (min-width: 700px ) {
       ul{
           --columns:3;
-          align-items: center;
+          justify-content: center;
       }
   }
 
