@@ -66,7 +66,10 @@ function openTab(tabName) {
   document.getElementById(tabName).classList.add(“active”);
   event.currentTarget.classList.add(“active”);
 }
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> parent of a03b1c2 (added CSS to media icons & material outlined icons)

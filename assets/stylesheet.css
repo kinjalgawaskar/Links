@@ -117,6 +117,7 @@ body {
     text-align: left;
     justify-content: center;
     align-content: center;
+    margin-bottom: 2em;
     width: 80%;
     padding-top: 30px;
     padding-bottom: 10px;
@@ -212,29 +213,20 @@ p{
       /*ICONS*/
 
 .media{
-	display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 100%;
-  z-index: 999;
-  flex-wrap: wrap;
 	flex-direction: row;
-	justify-content:space-around;
-  align-items: center;
-  position: fixed;
+  width: 100%;
+  font-size: small;
+	justify-content: center;
   bottom: 0;
-  background-color: rgb(4, 169, 156);
-  left: 0;
+  position: fixed;
+  z-index: 999;
+  background-color: #000000;
 }
 
       .material-symbols-outlined {
-        padding: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 25px;
-        justify-items: center;
-        justify-content: center;
-        color: #e9e4d5;
+        padding: 5px;
+        font-size: 15px;
+        color: #ffffff;
       }
 
       .collaborator {
@@ -245,7 +237,3 @@ p{
         align-content: center;
       }
       
-
-      .cursor {
-        cursor: url("custom.gif") default;
-      }
