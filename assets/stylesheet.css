@@ -6,9 +6,9 @@ html, body {
 /*constant for all body*/
 body {
  margin: auto;
+ padding: auto;
   width: 98%;
   box-sizing: border-box;
-    padding: auto;
 }
 
 /*custom font used*/
@@ -119,19 +119,12 @@ body {
     margin-bottom: 2em;
     width: 80%;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .channel-link {
-    color: #ffffff;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 30px;
-    letter-spacing: 1px;
-    padding-left: 40px;
-    padding-right: 0px;
-    text-align: center;
-    background-color: #000000;
-    padding-bottom: 40px;
+    width: 100%;
+    justify-items: center;
   }
 
   @media screen and (max-width: 601px) {
