@@ -21,10 +21,8 @@ body {
 
 /*ruler/scale on header*/
 .stickyruler {
-  position: fixed ;
   top: 0;
   left:0;
-  z-index: 999;
   opacity: 80%;
   width: 100%;
   aspect-ratio: 0 /0;
@@ -40,10 +38,9 @@ body {
 
 /*landing page skyline image*/
 .skyline {
-  position: sticky;
+  position:fixed
   bottom: 0;
   width: 100%;
-  z-index: 100;
 }
 
 .channel-title {
@@ -53,7 +50,6 @@ body {
   color: rgb(210, 62, 8);
   font-family:'Thunder-BoldLC', sans-serif;
   font-weight: 900;
-	line-height: 11vw;
 	margin-top: 60px;
   margin-bottom: -30px;
 } 
@@ -67,8 +63,8 @@ body {
     font-family: 'Thunder-BoldLC', sans-serif;
     font-weight: 900;
     line-height: 11vw;
-    margin-top: 210px;
-    margin-bottom: 3px;
+    margin-top: 16vw;
+    margin-bottom: 1vw;
 }
 }
 
@@ -81,7 +77,7 @@ body {
     padding-right: 0px;
     justify-content: center ;
     margin-top: -10px;
-    padding-bottom: 60px;
+    padding-bottom: 9vw;
     color: rgb(4, 169, 156);
     font-family: 'Space Grotesk', sans-serif;
     line-height: 11vw;
@@ -120,7 +116,7 @@ body {
     margin-bottom: 2em;
     width: 80%;
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 1vw;
   }
 
   .channel-link {
@@ -213,20 +209,21 @@ p{
       /*ICONS*/
 
 .media{
-	flex-direction: row;
+	display: flex;
   width: 100%;
-  font-size: small;
-	justify-content: center;
+	justify-content:space-evenly;
   bottom: 0;
+  left: 0;
   position: fixed;
-  z-index: 999;
-  background-color: #000000;
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
 }
 
       .material-symbols-outlined {
-        padding: 5px;
-        font-size: 15px;
-        color: #ffffff;
+        padding: 13px;
+        font-size: 2vw;
+        font-weight: 100;
+        color:rgb(229, 223, 209);
       }
 
       .collaborator {
@@ -236,4 +233,3 @@ p{
         align-items: center;
         align-content: center;
       }
-      
