@@ -48,7 +48,7 @@ body {
   font-size: 47vw;
   width: 100%;
   letter-spacing: 2px;
-  color: rgb(0, 0, 0);
+  color: rgb(210, 62, 8);
   font-family:'Thunder-BoldLC', sans-serif;
   font-weight: 900;
 	line-height: 11vw;
@@ -93,9 +93,9 @@ body {
       justify-content: center ;
       letter-spacing: 0;
       padding-left: 0px;
-      margin-top: 11px;
+      margin-top: 25px;
       text-align: center;
-      color: rgb(4, 203, 134);
+      color: rgb(4, 50, 203);
       font-family: 'Space Grotesk', sans-serif;
       line-height: 11vw;
       font-style: oblique;
@@ -107,12 +107,14 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 100;
     margin-top: 3em;
-    padding: 10px;
+    padding-left: 25%;
     letter-spacing: 0px;
     word-spacing: 1px;
     line-height: 23px;
     color: rgb(0, 0, 0);
     text-align: left;
+    justify-content: center;
+    align-content: center;
     margin-bottom: 2em;
     width: 80%;
     padding-top: 30px;
