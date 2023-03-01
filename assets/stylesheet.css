@@ -50,7 +50,7 @@ body {
   color: rgb(210, 62, 8);
   font-family:'Thunder-BoldLC', sans-serif;
   font-weight: 900;
-	margin-top: 60px;
+	margin-top: 20px;
   margin-bottom: -30px;
 } 
 
@@ -119,6 +119,12 @@ body {
     padding-bottom: 1vw;
   }
 
+  @media screen and (max-width: 601px) {
+    .channel-description {
+      margin-top: 6px;
+  }
+  }
+
   .channel-link {
     width: 100%;
     justify-items: center;
@@ -156,7 +162,6 @@ p{
     @media screen and (min-width: 700px ) {
       ul{
           --columns:3;
-          justify-content: center;
       }
   }
 
@@ -219,11 +224,26 @@ p{
   background-color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width: 700px ) {
+  .media {
+    padding: 10px;
+  }
+}
+
       .material-symbols-outlined {
         padding: 13px;
         font-size: 2vw;
         font-weight: 100;
         color:rgb(229, 223, 209);
+      }
+
+      @media screen and (max-width: 700px ) {
+        .material-symbols-outlined {
+          padding: 0px;
+          font-size: 5vw;
+          font-weight: 50;
+          color:rgb(229, 223, 209);
+        }
       }
 
       .collaborator {
