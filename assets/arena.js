@@ -224,3 +224,20 @@ fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 		parseBlocks(data)
 		window.arenaCallback?.()
 	})
+
+
+
+	var image = document.getElementById("image-block");
+	image.onclick = function() {
+		window.open(image.src);
+	
+	const images = document.querySelectorAll('img')
+	
+	console.log(images)
+	}
+	
+	//Get all of my image blocks
+	let imageBlocks = document.querySelectorAll('li.image-blocks')
+	console.log(imageBlocks)
+	//Make the blocks react on click
+	//Add or remove a class called active
