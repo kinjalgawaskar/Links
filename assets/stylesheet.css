@@ -50,7 +50,7 @@ body {
   color: rgb(210, 62, 8);
   font-family:'Thunder-BoldLC', sans-serif;
   font-weight: 900;
-	margin-top: 20px;
+	margin-top: 8px;
   margin-bottom: -35px;
 } 
 
@@ -63,7 +63,7 @@ body {
     font-family: 'Thunder-BoldLC', sans-serif;
     font-weight: 900;
     line-height: 11vw;
-    margin-top: 13vw;
+    margin-top: 7vw;
     margin-bottom: 1vw;
 }
 }
@@ -241,7 +241,7 @@ p{
       @media screen and (max-width: 700px ) {
         .material-symbols-outlined {
           padding: 0px;
-          font-size: 5vw;
+          font-size: 7.2vw;
           font-weight: 50;
           color:rgb(229, 223, 209);
         }
@@ -252,7 +252,7 @@ p{
       font-size: 16px;
       font-weight: 900;
       display: flex;
-      color: rgb(211, 53, 0);
+      color: rgb(234, 59, 1);
       font-family: 'Space Grotesk', sans-serif;
       padding-bottom: 5.5vw;
       left: 0;
@@ -269,7 +269,13 @@ p{
         }
       }
 
-
+      .song {
+        width: 11vw;
+        height: 5vw;
+        padding: -11em;
+        filter: sepia();
+        opacity: 2%;
+      }
      
 
 

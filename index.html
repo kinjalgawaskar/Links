@@ -36,15 +36,13 @@
 <script defer type="text/javascript" src="assets/script.js"></script>
 
 <body>
-  
- <!--ATTACHED AUDIO FILE -->
- <audio autoplay loop>
-  <source src="assets/nyc.mp3" type="audio/mpeg">
-</audio>
-
 
  <!-- FIXED RULER/SCALE ON HEADER -->
  <img class="stickyruler" src="assets/ruler.png" alt="header scale ruler" width="100%">
+
+
+  <!--ATTACHED AUDIO FILE -->
+  <iframe src="assets/nyc.mp3" loop id= "song" class= "song" controls="none" type=”audio/mp3″ ></iframe>
   
 
   <!-- ICONS -->
@@ -80,6 +78,8 @@
     <h2 class = "channel-title"></h2>
 
     <h3 class = h3 >cityscapes</h3>
+   
+
 
     <div class="video">
       <a href="https://www.are.na/amaya-kothari/newyork-bd6zcl4chum" 
@@ -114,6 +114,7 @@
 <template id="image-block">
   <li>
       <figure class="image-block">
+        <aside id="image"> </aside>
           <picture>
           <source class="image-display">
           <img class="image">

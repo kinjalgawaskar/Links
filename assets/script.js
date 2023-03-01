@@ -50,6 +50,11 @@ function openFullScreen(img) {
     document.body.removeChild(fullscreen);
   });
   }
+}
   
 
-  
+  $('#audioFrenata').on('ended', function() {
+    manageImageObjectsLevel();
+}).get(0).play();
+
+
