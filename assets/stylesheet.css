@@ -63,7 +63,7 @@ body {
     font-family: 'Thunder-BoldLC', sans-serif;
     font-weight: 900;
     line-height: 11vw;
-    margin-top: 16vw;
+    margin-top: 13vw;
     margin-bottom: 1vw;
 }
 }
@@ -247,15 +247,39 @@ p{
         }
       }
 
-      .collaborator {
-        font-family: 'Space Grotesk', sans-serif;
-        padding: 40px;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+      .channel-collaborator {
+      background-color: rgb(245, 242, 234);
+      font-size: 16px;
+      font-weight: 900;
+      display: flex;
+      color: rgb(211, 53, 0);
+      font-family: 'Space Grotesk', sans-serif;
+      padding-bottom: 5.5vw;
+      left: 0;
+      text-align: center;
+      padding-top: 2vw;
+      justify-content:space-evenly;
       }
 
+      @media screen and (max-width: 700px ) {
+        .channel-collaborator{
+          font-family: 'Space Grotesk', sans-serif;
+          padding-top: 5vw;
+          padding-bottom: 15vw;
+        }
+      }
+
+
      
+
+
+
+
+
+
+
+      
+
 
 
   

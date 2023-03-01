@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NEWYORK | Amaya & Kinjal</title>
-
+    <title>NEWYORK | Amaya & Kinjal</title> 
 
     <!-- LINKS TO FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,76 +33,80 @@
 
 <!-- JAVASCRIPT FILES LINKS -->
 <script defer src="assets/arena.js"></script>
-<script src="assets/script.js"></script>
+<script defer type="text/javascript" src="assets/script.js"></script>
 
 <body>
   
-  <!-- FIXED RULER/SCALE ON HEADER -->
-  <img class="stickyruler" src="assets/ruler.png" alt="header scale ruler" width="100%">
+ <!--ATTACHED AUDIO FILE -->
+ <audio autoplay loop>
+  <source src="/assets/nyc audio.mp3" type="audio/mpeg">
+</audio>
+
+
+ <!-- FIXED RULER/SCALE ON HEADER -->
+ <img class="stickyruler" src="assets/ruler.png" alt="header scale ruler" width="100%">
+  
+
+  <!-- ICONS -->
+
+  <div class="media">
+
+    <a href="images.html">
+      <span class="material-symbols-outlined">
+        visibility
+        </span>
+    </a>
+    <a href="articles.html">
+      <span class="material-symbols-outlined">
+        edit_note
+        </span>
+    </a>
+    <a href="videos.html">
+      <span class="material-symbols-outlined">
+        movie_filter
+        </span>
+    </a>
+    <a href="audios.html">
+      <span class="material-symbols-outlined">
+      nightlife
+      </span>
+    </a>
+  </div>
 
 
   <!-- HEADER, SUB-HEADER & CHANNEL INFO -->
   <section class="content">
-    <h2 class = "channel-title"></h2>
+
     <div class="video">
       <a href="https://www.are.na/amaya-kothari/newyork-bd6zcl4chum" 
-      id="">
-        <video autoPlay muted loop id="video" width="10%">
-          <source src= type="video/mp4"> 
+      id="channel-url">
+        <video autoPlay muted loop id="video">
+          <source src="assets/linksvideo.mp4" type="video/mp4"> 
         </video>
       </a>
     </div>
-    <h3 class = h3 >cityscapes</h3>
-    <p class="channel-description" >
-    </p>
-    <a href="https://www.are.na/amaya-kothari/newyork-bd6zcl4chum" id="channel-url" class="channel-link">
-      see original page here ☞
-    </a>
+
     </section>
-
-
-<!-- TOGGLE FILTER BUTTONS -->
-
-<div class="media">
-    
-  <a href="watch.html"><span id= "imageicon" class="material-symbols-outlined">
-    photo_camera
-    </span>
-  </a>
-
-  <a href="create.html">  <span id= "videoicon" class="material-symbols-outlined">
-    video_library
-    </span>
-  </a>
-  
-  <a href="listen.html">   <span id= "articleicon" class="material-symbols-outlined">
-    feed
-    </span>
-  </a>
-  
-</div>
 
 
  <!-- ALL CONTENT -->
  <ul class="
  image-blocks 
- ">
+ embed-blocks">
 </ul>
 
 
-<!-- Images. --> 
+<!-- IMAGES --> 
 <template id="image-block">
   <li>
       <figure class="image-block">
           <picture>
-            
           <source class="image-display">
           <img class="image">
           </picture>
       </figure>
   </li>
 </template>
-
 
 <!-- Articles / PDF's -->
 <template id="pdf-block">
@@ -116,7 +119,6 @@
 </figure>
 </li>
 </template>
-
 
 <!-- YouTube, Vimeo, etc. -->
 <template id="video-embed-block">
@@ -186,11 +188,8 @@
 </template>
 
 <section class="channel-owner channel-collaborator">
-  <ul>
-</ul>
+    I &nbsp; ♥ &nbsp;NEW&nbsp; YORK
 </section>
- 
 
-    
 </body>
 </html>

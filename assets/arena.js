@@ -241,3 +241,9 @@ fetch(`https://api.are.na/v2/channels/${channel}?per=100`, {cache: 'no-store'})
 	console.log(imageBlocks)
 	//Make the blocks react on click
 	//Add or remove a class called active
+
+
+
+
+
+

@@ -26,3 +26,30 @@ block.querySelector('aside').onClick = () => {
 }
 }
 }
+
+
+
+
+
+
+function openFullScreen(img) {
+  // Create a new element to hold the full screen image
+  var fullscreen = document.createElement('div');
+  fullscreen.classList.add('fullscreen');
+  
+  // Create a new image element to hold the image
+  var imgElement = document.createElement('img');
+  imgElement.src = img.src;
+  fullscreen.appendChild(imgElement);
+  
+  // Add the new element to the document body
+  document.body.appendChild(fullscreen);
+  
+  // Add a click event listener to the new element to remove it when clicked
+  fullscreen.addEventListener('click', function() {
+    document.body.removeChild(fullscreen);
+  });
+  }
+  
+
+  
