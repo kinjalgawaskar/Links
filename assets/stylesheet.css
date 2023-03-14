@@ -1,4 +1,4 @@
-html, body {
+html {
   background-color: rgb(245, 242, 234);
   scroll-behavior: smooth;
 }
@@ -7,7 +7,6 @@ html, body {
 body {
  margin: auto;
  padding: auto;
-  width: 98%;
   box-sizing: border-box;
 }
 
@@ -19,7 +18,7 @@ body {
   font-style: normal;
 }
 
-/*ruler/scale on header*/
+/*architecture ruler or scale above header*/
 .stickyruler {
   top: 0;
   left:0;
@@ -33,6 +32,13 @@ body {
   align-items: start;
   border-color: none;
   border-style:none;
+}
+
+@media screen and (max-width: 700px ) {
+  .stickyruler {
+    width: 250%;
+    object-fit: contain;
+  }
 }
 
 
@@ -137,6 +143,18 @@ body {
   }
   }
 
+  video {
+   width: 100%;
+   padding: 0;
+  }
+
+  @media screen and (max-width: 700px ) {
+    video{
+      width: 250%;
+    }
+}
+
+
 section,
 ul,
 figure {
@@ -145,6 +163,11 @@ figure {
     align-items: center;
     align-content: center;
     gap: 0.7em;
+}
+
+ul {
+  width: 98%;
+  padding-left: 2vw;
 }
 
 p{
@@ -216,7 +239,7 @@ img {
   left: 0;
   position: fixed;
   z-index: 10;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(8, 156, 144);
 }
 
 @media screen and (max-width: 700px ) {
@@ -230,7 +253,7 @@ img {
         padding: 13px;
         font-size: 2vw;
         font-weight: 100;
-        color:rgb(229, 223, 209);
+        color:rgb(254, 255, 244);
       }
 
       @media screen and (max-width: 700px ) {
@@ -238,7 +261,7 @@ img {
           padding: 0px;
           font-size: 7.2vw;
           font-weight: 50;
-          color:rgb(229, 223, 209);
+          color:rgb(254, 255, 244);
         }
       }
 
