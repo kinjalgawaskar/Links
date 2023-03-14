@@ -166,7 +166,8 @@ p{
       }
   }
 
-  img {
+  /*Image styles*/
+img {
     display: block;
     width: 100%;
     border-radius: 9px;
@@ -204,16 +205,9 @@ p{
     transition-delay: 2s;
   }
 
-      .symbols {
-        display: flex;
-        align-items: center; 
-        margin-top: 1em;
-        justify-content: center;
-      }
-
       
       /*ICONS*/
-
+/*Navigation bottom menu icon flexbox*/
 .media{
 	display: flex;
   width: 100%;
@@ -231,6 +225,7 @@ p{
   }
 }
 
+/*Navigation bottom menu individual icons*/
       .material-symbols-outlined {
         padding: 13px;
         font-size: 2vw;
@@ -269,15 +264,14 @@ p{
         }
       }
 
+/*Background song audio file*/
       .song {
         width: 11vw;
         height: 5vw;
         padding: -11em;
         filter: sepia();
-        opacity: 2%;
+        opacity: 0%;
       }
-     
-
 
 
 
